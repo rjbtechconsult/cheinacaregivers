@@ -22,6 +22,7 @@ $yellow: #ffd800;
 $green: #00d9a5;
 $grey: #494949;
 $light-grey: #e8e8e8;
+$black: #202020;
 $box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 
 
@@ -52,6 +53,9 @@ body{
     font-weight: inherit;
     line-height: inherit;
   }
+}
+.bg-black{
+    background-color: $black;
 }
 
 @media (min-width: 1200px){
@@ -97,6 +101,14 @@ body{
     min-height: 90vh;
     background-size: 900px;
     background-position: right -210px top -77px;
+
+    @media (max-width: 767px) {
+        display: flex;
+
+        .container{
+            margin: auto;
+        }
+    }
 }
 
 section{
@@ -116,3 +128,50 @@ input{
     border-radius: 20px;
 }
 
+//Footer----------------------------------------------------------------------------------------
+.footer{
+  background:$black;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:$green;
+        }
+    }
+    @media(max-width: 767px){
+        margin-top: 20px;
+        li{
+            padding: 3px 0px;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
+//footer end------------------------------------------------------------------
+
+.header-col{
+    @media (max-width: 767px){
+        background-color: #fffffff0;
+        padding: 30px 0px;
+        border-radius: 30px;
+        box-shadow: $box-shadow;
+    }
+
+    
+}
