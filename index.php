@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Javascript dependencies -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -72,11 +72,11 @@
     <!--/.Navbar -->
 
     <!-- Banner section -->
-    <header class="py-5 header-banner">
+    <header class="py-5 header-banner d-flex">
         <div class="container my-md-auto">
-            <div class="row d-flex">
+            <div class="row">
                 <div class="col-md-5 header-col">
-                    <div class="text-center text-md-left">
+                    <div class="text-center text-md-left my-auto">
                         <h1 class="font-bold">
                             Find care home jobs the easy way
                         </h1>
@@ -87,6 +87,7 @@
                     </div>
                 </div>
             </div>
+            <a id="sec2" href="#sec2" class="scroll-down" address="true"></a>
         </div>
     </header>
 
@@ -272,6 +273,41 @@
     <script>
         var currentYear = (new Date).getFullYear();
         $("#current_year").text((new Date).getFullYear());
+
+        $(function() {
+            // smooth scroll effect
+            $('a[href*="#sec2"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // $(this).css('margin-top', '0px');
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1200, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+        })
     </script>
 
 </body>
