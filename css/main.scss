@@ -21,8 +21,11 @@ src: url(../font/Quicksand_Dash.otf);
 $yellow: #ffd800;
 $green: #00d9a5;
 $grey: #494949;
+$nurse-blue: #0A8FE9;
 $light-grey: #e8e8e8;
+$deep-grey: #b7b7b7;
 $black: #202020;
+$transparent-backgroound: #ffffff00;
 $box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 
 
@@ -57,6 +60,12 @@ body{
 .bg-black{
     background-color: $black;
 }
+.bg-nurse-blue{
+    background-color: $nurse-blue;
+}
+.bg-orange{
+    background-color: #F47503;
+}
 
 @media (min-width: 1200px){
     .container{
@@ -68,6 +77,9 @@ body{
 }
 .bg-light-grey{
     background-color: $light-grey;
+}
+.bg-green{
+    background-color: $green;
 }
 .btn{
     border-radius: 30px;
@@ -96,16 +108,19 @@ body{
     }
 }
 .header-banner{
-    background-image: url(../img/wheelchair.png);
-    background-repeat: no-repeat;
-    min-height: 90vh;
-    background-size: 900px;
-    background-position: right -210px top -77px;
+    // background-image: url(../img/nurseandfam.png);
+    // background-repeat: no-repeat;
+    // min-height: 90vh;
+    // background-size: 900px;
+    // background-position: right -210px top -77px;
 
-    @media (max-width: 767px) {
-        .row{
-            margin-top: 100px;
-        }
+    // @media (max-width: 767px) {
+    //     .row{
+    //         margin-top: 100px;
+    //     }
+    // }
+    .carousel-control-next, .carousel-control-prev{
+        width: 9%;
     }
 }
 
@@ -163,15 +178,15 @@ input{
 }
 //footer end------------------------------------------------------------------
 
-.header-col{
-    @media (max-width: 767px){
-        background-color: #fffffff0;
-        padding: 30px 0px;
-        border-radius: 30px;
-        box-shadow: $box-shadow;
-        margin: 0 1rem;
-    }
-}
+// .header-col{
+    // @media (max-width: 767px){
+    //     background-color: #fffffff0;
+    //     padding: 30px 0px;
+    //     border-radius: 30px;
+    //     box-shadow: $box-shadow;
+    //     margin: 0 1rem;
+    // }
+// }
 
 //scroll down bounce-----------------------------------------------------------
 
@@ -235,3 +250,41 @@ input{
   }
 }
 //scroll down end -------------------------------------------------------------
+
+.carousel-indicators {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $light-grey;
+    width: 176px;
+    padding: 5px;
+    bottom: 60px;
+    border-radius: 30px;
+    -webkit-box-shadow: inset 0px 0px 9px -4px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 9px -4px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 9px -4px rgba(0,0,0,1);
+
+    @media(max-width: 767px){
+        bottom: 10px;
+    }
+
+    li{
+        height: 20px;
+        border-bottom: unset;
+        border-top: unset;
+        width:60px;
+        text-indent: unset;
+        border-radius: 30px;
+        background-color: $transparent-backgroound;
+
+       
+    }
+
+     .active{
+            background-color: $deep-grey !important;
+            color: black !important;
+            -webkit-box-shadow: 0px 0px 6px -2px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 0px 6px -2px rgba(0,0,0,1);
+            box-shadow: 0px 0px 6px -2px rgba(0,0,0,1);
+        }
+
+} 

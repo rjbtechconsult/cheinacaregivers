@@ -72,29 +72,128 @@
     <!--/.Navbar -->
 
     <!-- Banner section -->
-    <header class="py-5 header-banner d-flex">
-        <div class="container my-md-auto">
-            <div class="row">
-                <div class="col-md-5 header-col">
-                    <div class="text-center text-md-left my-auto">
-                        <h1 class="font-bold">
-                            Find care home jobs the easy way
-                        </h1>
-                        <h5>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut, a ea at ex molestias tempore esse, provident possimus animi labore. Esse obcaecati porro saepe.
-                        </h5>
-                        <a class="btn btn-primary btn-lg" href="#">READ MORE</a>
+    <header class="header-banner">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleFade" data-slide-to="0" class="active text-dark text-center">1</li>
+                <li data-target="#carouselExampleFade" data-slide-to="1" class="text-dark text-center">2</li>
+                <li data-target="#carouselExampleFade" data-slide-to="2" class="text-dark text-center">3</li>
+                </ul>
+            </ol>
+
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active bg-green py-5" style="height:92vh;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 header-col d-flex">
+                                <div class="text-center text-md-left my-auto">
+                                    <h1 class="font-bold">
+                                        Find care home jobs the easy way
+                                    </h1>
+                                    <h5>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut, a ea at ex molestias tempore esse, provident possimus animi labore. Esse obcaecati porro saepe.
+                                    </h5>
+                                    <a class="btn btn-primary btn-lg" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 mt-md-0 mt-3">
+                                <img class="w-100" src="img/nurseandfam.png" alt="Find care">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item bg-orange py-5" style="height:92vh;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 header-col d-flex">
+                                <div class="text-center text-md-left my-auto">
+                                    <h1 class="font-bold">
+                                        Cheina Care Givers connects nurses and carers to care homes across Ghana
+                                    </h1>
+                                    <h5>
+                                        We’re simplifying booking temporary shifts, making it easier than ever to be an independent nurse or carer.
+                                    </h5>
+                                    <a class="btn btn-primary btn-lg" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 mt-md-0 mt-3">
+                                <img class="w-100" src="img/nurseandmum.png" alt="Find care">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item py-5 bg-nurse-blue" style="height:92vh;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5 header-col d-flex">
+                                <div class="text-center text-md-left my-auto">
+                                    <h1 class="font-bold">
+                                        Section Three Heading Text
+                                    </h1>
+                                    <h5>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut, a ea at ex molestias tempore esse, provident possimus animi labore. Esse obcaecati porro saepe.
+                                    </h5>
+                                    <a class="btn btn-primary btn-lg" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                            <div class="col-md-7 mt-md-0 mt-3">
+                                <img class="w-100" src="img/nurseandwoman.png" alt="Find care">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <a id="sec2" href="#sec2" class="scroll-down" address="true"></a>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+        <!-- <a id="sec2" href="#sec2" class="scroll-down" address="true"></a> -->
     </header>
 
     <!-- Sign up with chiena -->
     <section>
         <div class="container">
             <div class="row">
+                <div class="col-md-6">
+                    <div class="card w-md-75 w-100 box-shadow">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Password</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">
+                                        I agree to Cheina Care Givers's <a href="#"> terms & conditions</a> and <a href="#">privacy policy</a>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg float-right ">SIGN UP</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-6 ">
                     <div class="text-center text-md-left">
                         <h1 class="font-bold">Sign up with Chiena Care Givers in Under a minute</h1>
@@ -124,33 +223,6 @@
                         booking shifts on Cheina Care Givers.
                     </h5>
                 </div>
-                <div class="col-md-6">
-                    <div class="card w-75 mx-auto box-shadow">
-                        <div class="card-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Password</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" placeholder="Password">
-                                </div>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">
-                                        I agree to Cheina Care Givers's <a href="#"> terms & conditions</a> and <a href="#">privacy policy</a>
-                                    </label>
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-lg float-right ">SIGN UP</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -159,9 +231,7 @@
     <section>
         <div class="container">
             <div class="row flex-column-reverse flex-md-row">
-                <div class="col-md-6">
-                    <img class="w-100" src="img/nurses.png" alt="Connects nurses and career">
-                </div>
+
 
                 <div class="col-md-6 d-flex">
                     <div class="my-auto text-md-left text-center">
@@ -171,6 +241,9 @@
                         </h5>
                         <button class="btn btn-primary btn-lg">SIGN UP</button>
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="w-100" src="img/nurses.png" alt="Connects nurses and career">
                 </div>
             </div>
         </div>
