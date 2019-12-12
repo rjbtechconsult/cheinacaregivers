@@ -84,7 +84,7 @@
 
             <div class="carousel-inner">
                 <!-- Slide 1 -->
-                <div class="carousel-item active bg-light-blue py-5 d-flex" style="height:100vh;">
+                <div class="carousel-item active bg-light-blue d-flex active">
                     <div class="container my-auto">
                         <div class="row">
 
@@ -109,7 +109,7 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item bg-light-blue py-5 d-flex active" style="height:100vh;">
+                <div class="carousel-item bg-light-blue d-flex">
                     <div class="container my-auto">
                         <div class="row">
                             <div class="col-md-5 header-col d-flex">
@@ -131,7 +131,7 @@
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-item py-5 bg-light-blue d-flex" style="height:100vh;">
+                <div class="carousel-item bg-light-blue d-flex">
                     <div class="container my-auto">
                         <div class="row">
                             <div class="col-md-5 header-col d-flex">
