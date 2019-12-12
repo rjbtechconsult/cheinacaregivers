@@ -152,12 +152,9 @@
   width: 9%;
 }
 
-.header-banner .banner-img {
-  width: 100%;
-}
-
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .header-banner .banner-img {
+    width: 75% !important;
     padding: 30px 0;
   }
 }

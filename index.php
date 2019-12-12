@@ -101,7 +101,7 @@
                             </div>
 
                             <div class="col-md-7 mt-md-0 mt-3 d-flex">
-                                <img class="banner-img mx-auto" src="img/nurseandfam.png" alt="Find care" data-aos="zoom-in" data-aos-duration="1000">
+                                <img class="w-100 banner-img mx-auto" src="img/nurseandfam.png" alt="Find care" data-aos="zoom-in" data-aos-duration="1000">
                             </div>
 
                         </div>
@@ -124,7 +124,7 @@
                                 </div>
                             </div>
                             <div class="col-md-7 mt-md-0 mt-3 d-flex">
-                                <img class="banner-img mx-auto" src="img/nurseandmum.png" alt="Find care">
+                                <img class="w-100 banner-img mx-auto" src="img/nurseandmum.png" alt="Find care">
                             </div>
                         </div>
                     </div>
@@ -146,7 +146,7 @@
                                 </div>
                             </div>
                             <div class="col-md-7 mt-md-0 mt-3 d-flex">
-                                <img class="banner-img mx-auto" src="img/nurseandwoman.png" alt="Find care">
+                                <img class="w-100 banner-img mx-auto" src="img/nurseandwoman.png" alt="Find care">
                             </div>
                         </div>
                     </div>
