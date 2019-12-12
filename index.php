@@ -33,7 +33,7 @@
     <nav class="navbar  navbar-expand-lg fixed-top bg-light-grey">
         <div class="container">
             <a class="navbar-brand link-unstyled" href="./">
-                <img src="img/logo.png" width="80" alt="Cheina Care Givers"> Cheina Care Givers
+                <img src="img/logo.png" width="150" alt="Cheina Care Givers">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
@@ -63,7 +63,7 @@
                 </ul>
                 <ul class="navbar-nav my-2 my-lg-0 ml-auto">
                     <li class="nav-item nav-item-padding active text-center">
-                        <button class="btn btn-primary btn-lg">SIGN UP</button>
+                        <button class="btn btn-primary btn-lg box-shadow-btn">SIGN UP</button>
                     </li>
                 </ul>
             </div>
@@ -75,7 +75,7 @@
     <header class="header-banner">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 
-            <ol class="carousel-indicators">
+            <ol class="carousel-indicators indicators">
                 <li data-target="#carouselExampleFade" data-slide-to="0" class="active text-dark text-center">1</li>
                 <li data-target="#carouselExampleFade" data-slide-to="1" class="text-dark text-center">2</li>
                 <li data-target="#carouselExampleFade" data-slide-to="2" class="text-dark text-center">3</li>
@@ -95,7 +95,7 @@
                                     <h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut, a ea at ex molestias tempore esse, provident possimus animi labore. Esse obcaecati porro saepe.
                                     </h5>
-                                    <a class="btn btn-primary btn-lg" href="#">READ MORE</a>
+                                    <a class="btn btn-primary btn-lg box-shadow-btn" href="#">READ MORE</a>
                                 </div>
                             </div>
                             <div class="col-md-7 mt-md-0 mt-3">
@@ -117,7 +117,7 @@
                                     <h5>
                                         We’re simplifying booking temporary shifts, making it easier than ever to be an independent nurse or carer.
                                     </h5>
-                                    <a class="btn btn-primary btn-lg" href="#">READ MORE</a>
+                                    <a class="btn btn-primary btn-lg box-shadow-btn" href="#">READ MORE</a>
                                 </div>
                             </div>
                             <div class="col-md-7 mt-md-0 mt-3">
@@ -139,7 +139,7 @@
                                     <h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut, a ea at ex molestias tempore esse, provident possimus animi labore. Esse obcaecati porro saepe.
                                     </h5>
-                                    <a class="btn btn-primary btn-lg" href="#">READ MORE</a>
+                                    <a class="btn btn-primary btn-lg box-shadow-btn" href="#">READ MORE</a>
                                 </div>
                             </div>
                             <div class="col-md-7 mt-md-0 mt-3">
@@ -295,8 +295,134 @@
         </div>
     </section>
 
+    <!-- Testimonial -->
+    <section class="testimonial bg-light-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>What Our Customers are Saying</h1>
+                    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img class="w-100 testmonial-img" src="img/happyfamily.jpg" alt="testimonial">
+
+                                        <!-- <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="img/logo.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
+                                                    <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="/examples/images/clients/2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                                                    <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="/examples/images/clients/3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
+                                                    <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="/examples/images/clients/4.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                                                    <p class="overview"><b>Mary Saveley</b>, Web Designer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="/examples/images/clients/5.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
+                                                    <p class="overview"><b>Martin Sommer</b>, UX Analyst</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <a href="#">
+                                                    <img src="/examples/images/clients/6.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                                                    <p class="overview"><b>John Williams</b>, Web Developer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="mt-5 pt-5 pb-5 footer">
+    <footer class=" pt-5 pb-5 footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-xs-12 about-company links text-center text-md-left">
