@@ -73,7 +73,7 @@
 
     <!-- Banner section -->
     <header class="header-banner">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carouselExampleFade" class="carousel  carousel-fade" data-ride="carousel">
 
             <ol class="carousel-indicators indicators">
                 <li data-target="#carouselExampleFade" data-slide-to="0" class="active text-dark text-center">1</li>
