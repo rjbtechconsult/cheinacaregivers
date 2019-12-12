@@ -30,10 +30,10 @@
 <body>
 
     <!--Navbar -->
-    <nav class="navbar  navbar-expand-lg fixed-top bg-light-grey">
+    <nav class="navbar  navbar-expand-lg fixed-top transparent">
         <div class="container">
             <a class="navbar-brand link-unstyled" href="./">
-                <img src="img/logo.png" width="150" alt="Cheina Care Givers">
+                <img class="logo" src="img/logo.png" width="150" alt="Cheina Care Givers">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
@@ -84,12 +84,12 @@
 
             <div class="carousel-inner">
                 <!-- Slide 1 -->
-                <div class="carousel-item active bg-green py-5" style="height:92vh;">
+                <div class="carousel-item active bg-nurse-blue py-5" style="height:100vh;">
                     <div class="container">
                         <div class="row">
 
                             <div class="col-md-5 header-col d-flex" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="text-center text-md-left my-auto">
+                                <div class="text-center text-md-left my-auto text-black">
                                     <h1 class="font-bold">
                                         Find care home jobs the easy way
                                     </h1>
@@ -109,7 +109,7 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item bg-orange py-5" style="height:92vh;">
+                <div class="carousel-item bg-orange py-5" style="height:100vh;">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-5 header-col d-flex">
@@ -131,7 +131,7 @@
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-item py-5 bg-nurse-blue" style="height:92vh;">
+                <div class="carousel-item py-5 bg-light-blue" style="height:100vh;">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-5 header-col d-flex">
@@ -495,6 +495,19 @@
         $(function() {
 
             AOS.init();
+
+            //box-shadow nav on scroll
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                    // $('#return-to-top').fadeIn(200); // Fade in the arrow
+                    $('.navbar').removeClass('on-nav-scroll');
+                    $('.navbar').addClass('on-nav-scroll');
+                } else {
+                    // $('#return-to-top').fadeOut(200); // Else fade out the arrow
+                    $('.navbar').removeClass('on-nav-scroll');
+                    $('.navbar').addClass('transparent');
+                }
+            });
 
             // smooth scroll effect
             $('a[href*="#sec2"]').not('[href="#"]').not('[href="#0"]').click(function(event) {

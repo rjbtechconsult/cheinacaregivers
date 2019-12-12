@@ -22,9 +22,11 @@ $yellow: #ffd800;
 $green: #00d9a5;
 $grey: #494949;
 $nurse-blue: #0A8FE9;
+$light-blue: #c1eefa;
 $light-grey: #e8e8e8;
 $deep-grey: #b7b7b7;
 $black: #202020;
+$blue-black: #131629;
 $transparent-backgroound: #ffffff00;
 $box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 $box-shadow-btn:  0px 0px 6px -2px rgba(0,0,0,1);
@@ -38,9 +40,9 @@ $box-shadow-btn:  0px 0px 6px -2px rgba(0,0,0,1);
         font-size: 12px;
     }
 }
-body{
-    padding-top: 73px !important;
-}
+// body{
+//     padding-top: 73px !important;
+// }
 .box-shadow{
    box-shadow: $box-shadow;
 }
@@ -61,17 +63,43 @@ body{
 .bg-black{
     background-color: $black;
 }
+.bg-blue-black{
+    background-color: $blue-black;
+}
 .bg-nurse-blue{
     background-color: $nurse-blue;
 }
 .bg-orange{
     background-color: #F47503;
 }
+.bg-light-blue{
+    background-color: $light-blue;
+}
 
 @media (min-width: 1200px){
     .container{
         max-width: 1268px;
     }
+}
+.transparent{
+    background-color: #ffffff00;
+    transition: all .3s ease;
+
+    @media (max-width: 767px){
+    background-color:  #ffffffd9;
+    }
+
+}
+.on-nav-scroll{
+    background-color:  #ffffffd9;
+    -webkit-box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.29);
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.29);
+    .logo{
+        width: 100px;
+        transition: all .3s ease;
+    }
+    transition: all .3s ease;
 }
 .grey{
     color: $grey;
@@ -118,17 +146,18 @@ body{
     // background-size: 900px;
     // background-position: right -210px top -77px;
 
-    // @media (max-width: 767px) {
-    //     .row{
-    //         margin-top: 100px;
-    //     }
-    // }
+    @media (max-width: 767px) {
+        .carousel-item{
+            padding-top: 90px !important;
+        }
+    }
     .carousel-control-next, .carousel-control-prev{
         width: 9%;
     }
     .banner-img{
         @media (max-width:767px){
            width: 75% !important;
+           padding: 30px 0;
         }
     }
 }
