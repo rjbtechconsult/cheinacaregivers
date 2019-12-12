@@ -84,8 +84,8 @@
 
             <div class="carousel-inner">
                 <!-- Slide 1 -->
-                <div class="carousel-item active bg-nurse-blue py-5" style="height:100vh;">
-                    <div class="container">
+                <div class="carousel-item active bg-light-blue py-5 d-flex" style="height:100vh;">
+                    <div class="container my-auto">
                         <div class="row">
 
                             <div class="col-md-5 header-col d-flex" data-aos="fade-up" data-aos-duration="1000">
@@ -109,8 +109,8 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item bg-orange py-5" style="height:100vh;">
-                    <div class="container">
+                <div class="carousel-item bg-light-blue py-5 d-flex" style="height:100vh;">
+                    <div class="container my-auto">
                         <div class="row">
                             <div class="col-md-5 header-col d-flex">
                                 <div class="text-center text-md-left my-auto">
@@ -131,8 +131,8 @@
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-item py-5 bg-light-blue" style="height:100vh;">
-                    <div class="container">
+                <div class="carousel-item py-5 bg-light-blue d-flex" style="height:100vh;">
+                    <div class="container my-auto">
                         <div class="row">
                             <div class="col-md-5 header-col d-flex">
                                 <div class="text-center text-md-left my-auto">
