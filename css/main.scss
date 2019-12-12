@@ -146,7 +146,7 @@ $box-shadow-btn:  0px 0px 6px -2px rgba(0,0,0,1);
     // background-size: 900px;
     // background-position: right -210px top -77px;
     .carousel-item{
-        // min-height: 100vh;
+        min-height: 100vh;
         padding: 100px 0px;
         @media (max-width: 769px) {
             padding-top: 90px !important;

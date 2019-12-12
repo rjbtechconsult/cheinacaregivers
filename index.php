@@ -88,7 +88,7 @@
                     <div class="container my-auto">
                         <div class="row">
 
-                            <div class="col-md-5 header-col d-flex" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="col-md-6 header-col d-flex" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="text-center text-md-left my-auto text-black">
                                     <h1 class="font-bold">
                                         Find care home jobs the easy way
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-7 mt-md-0 mt-3 d-flex">
+                            <div class="col-md-6 mt-md-0 mt-3 d-flex">
                                 <img class="w-100 banner-img mx-auto" src="img/nurseandfam.png" alt="Find care" data-aos="zoom-in" data-aos-duration="1000">
                             </div>
 
@@ -112,7 +112,7 @@
                 <div class="carousel-item bg-light-blue d-flex">
                     <div class="container my-auto">
                         <div class="row">
-                            <div class="col-md-5 header-col d-flex">
+                            <div class="col-md-6 header-col d-flex">
                                 <div class="text-center text-md-left my-auto">
                                     <h1 class="font-bold">
                                         Cheina connects you to nurses.
@@ -123,7 +123,7 @@
                                     <a class="btn btn-primary btn-lg box-shadow-btn mt-3" href="#">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="col-md-7 mt-md-0 mt-3 d-flex">
+                            <div class="col-md-6 mt-md-0 mt-3 d-flex">
                                 <img class="w-100 banner-img mx-auto" src="img/nurseandmum.png" alt="Find care">
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                 <div class="carousel-item bg-light-blue d-flex">
                     <div class="container my-auto">
                         <div class="row">
-                            <div class="col-md-5 header-col d-flex">
+                            <div class="col-md-6 header-col d-flex">
                                 <div class="text-center text-md-left my-auto">
                                     <h1 class="font-bold">
                                         Section Three Heading Text
@@ -145,7 +145,7 @@
                                     <a class="btn btn-primary btn-lg box-shadow-btn mt-3" href="#">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="col-md-7 mt-md-0 mt-3 d-flex">
+                            <div class="col-md-6 mt-md-0 mt-3 d-flex">
                                 <img class="w-100 banner-img mx-auto" src="img/nurseandwoman.png" alt="Find care">
                             </div>
                         </div>
