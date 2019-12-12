@@ -116,6 +116,12 @@ body {
   width: 9%;
 }
 
+@media (max-width: 767px) {
+  .header-banner .banner-img {
+    width: 75% !important;
+  }
+}
+
 section {
   padding: 5rem 0rem;
 }
@@ -322,6 +328,12 @@ input:focus {
   padding: 0 70px;
 }
 
+@media (max-width: 767px) {
+  .testimonial .carousel {
+    padding: 0 0;
+  }
+}
+
 .testimonial .carousel .item {
   color: #999;
   overflow: hidden;
@@ -377,5 +389,9 @@ input:focus {
   color: #fff;
   background: #00d9a5;
   border: 5px double;
+}
+
+.testimonial .testmonial-img {
+  border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */

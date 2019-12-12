@@ -126,6 +126,11 @@ body{
     .carousel-control-next, .carousel-control-prev{
         width: 9%;
     }
+    .banner-img{
+        @media (max-width:767px){
+           width: 75% !important;
+        }
+    }
 }
 
 section{
@@ -318,6 +323,9 @@ input{
     .carousel {
         margin: 50px auto;
         padding: 0 70px;
+        @media(max-width: 767px){
+            padding: 0 0;
+        }
     }
     .carousel .item {
         color: #999;
@@ -367,5 +375,8 @@ input{
         color: #fff;
         background: $green;    
         border: 5px double;    
+    }
+    .testmonial-img{
+        border-radius: 20px;
     }
 }

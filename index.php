@@ -87,7 +87,8 @@
                 <div class="carousel-item active bg-green py-5" style="height:92vh;">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-5 header-col d-flex">
+
+                            <div class="col-md-5 header-col d-flex" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="text-center text-md-left my-auto">
                                     <h1 class="font-bold">
                                         Find care home jobs the easy way
@@ -95,12 +96,14 @@
                                     <h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut, a ea at ex molestias tempore esse, provident possimus animi labore. Esse obcaecati porro saepe.
                                     </h5>
-                                    <a class="btn btn-primary btn-lg box-shadow-btn" href="#">READ MORE</a>
+                                    <a class="btn btn-primary btn-lg box-shadow-btn mt-3" href="#" data-aos="fade-up" data-aos-duration="1000">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="col-md-7 mt-md-0 mt-3">
-                                <img class="w-100" src="img/nurseandfam.png" alt="Find care">
+
+                            <div class="col-md-7 mt-md-0 mt-3 d-flex">
+                                <img class="w-100 banner-img mx-auto" src="img/nurseandfam.png" alt="Find care" data-aos="zoom-in" data-aos-duration="1000">
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -117,11 +120,11 @@
                                     <h5>
                                         We’re simplifying booking temporary shifts, making it easier than ever to be an independent nurse or carer.
                                     </h5>
-                                    <a class="btn btn-primary btn-lg box-shadow-btn" href="#">READ MORE</a>
+                                    <a class="btn btn-primary btn-lg box-shadow-btn mt-3" href="#">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="col-md-7 mt-md-0 mt-3">
-                                <img class="w-100" src="img/nurseandmum.png" alt="Find care">
+                            <div class="col-md-7 mt-md-0 mt-3 d-flex">
+                                <img class="w-100 banner-img mx-auto" src="img/nurseandmum.png" alt="Find care">
                             </div>
                         </div>
                     </div>
@@ -139,11 +142,11 @@
                                     <h5>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut, a ea at ex molestias tempore esse, provident possimus animi labore. Esse obcaecati porro saepe.
                                     </h5>
-                                    <a class="btn btn-primary btn-lg box-shadow-btn" href="#">READ MORE</a>
+                                    <a class="btn btn-primary btn-lg box-shadow-btn mt-3" href="#">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="col-md-7 mt-md-0 mt-3">
-                                <img class="w-100" src="img/nurseandwoman.png" alt="Find care">
+                            <div class="col-md-7 mt-md-0 mt-3 d-flex">
+                                <img class="w-100 banner-img mx-auto" src="img/nurseandwoman.png" alt="Find care">
                             </div>
                         </div>
                     </div>
@@ -167,7 +170,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card w-md-75 w-100 box-shadow">
+                    <div class="card w-md-75 w-100 box-shadow" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-body">
                             <form>
                                 <div class="form-group">
@@ -194,7 +197,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 ">
+                <div class="col-md-6 " data-aos="fade-down" data-aos-duration="1000">
                     <div class="text-center text-md-left">
                         <h1 class="font-bold">Sign up with Chiena Care Givers in Under a minute</h1>
                     </div>
@@ -231,9 +234,7 @@
     <section>
         <div class="container">
             <div class="row flex-column-reverse flex-md-row">
-
-
-                <div class="col-md-6 d-flex">
+                <div class="col-md-6 d-flex" data-aos="fade-up" data-aos-duration="1000">
                     <div class="my-auto text-md-left text-center">
                         <h1 class="font-bold">Cheina Care Givers connects nurses and carers to care homes across Ghana </h1>
                         <h5>
@@ -242,7 +243,7 @@
                         <button class="btn btn-primary btn-lg">SIGN UP</button>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000">
                     <img class="w-100" src="img/nurses.png" alt="Connects nurses and career">
                 </div>
             </div>
@@ -254,7 +255,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="card w-100" style="border:none;">
                         <img class="card-img-top w-75 mx-auto" src="img/hold_calendar.png" alt="Homes post their shifts ">
                         <div class="card-body text-center">
@@ -266,7 +267,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-down" data-aos-duration="1000">
                     <div class="card w-100" style="border:none;">
                         <img class="card-img-top w-75 mx-auto" src="img/writing.png" alt="pick the shifts you want">
                         <div class="card-body text-center">
@@ -279,7 +280,7 @@
                 </div>
 
 
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="card w-100" style="border:none;">
                         <img class="card-img-top w-75 mx-auto" src="img/clock.png" alt="Submit your timesheet online">
                         <div class="card-body text-center">
@@ -298,7 +299,7 @@
     <!-- Testimonial -->
     <section class="testimonial bg-light-grey">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="col-sm-12">
                     <h1>What Our Customers are Saying</h1>
                     <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
@@ -310,43 +311,61 @@
                         </ol>
                         <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
+
                             <div class="item carousel-item active">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <img class="w-100 testmonial-img" src="img/happyfamily.jpg" alt="testimonial">
-
-                                        <!-- <div class="media">
-                                            <div class="media-left d-flex mr-3">
-                                                <a href="#">
-                                                    <img src="img/logo.png" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="testimonial">
-                                                    <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
-                                                    <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                                        <img class="w-100 testmonial-img" src="img/family2.png" alt="testimonial">
                                     </div>
-                                    <div class="col-sm-6">
-                                        <div class="media">
-                                            <div class="media-left d-flex mr-3">
-                                                <a href="#">
-                                                    <img src="/examples/images/clients/2.jpg" alt="">
-                                                </a>
-                                            </div>
+                                    <div class="col-sm-6 d-flex">
+                                        <div class="media my-auto">
                                             <div class="media-body">
                                                 <div class="testimonial">
                                                     <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
-                                                    <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                                                    <p class="overview"><b>Markwei Family</b>, Happy</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img class="w-100 testmonial-img" src="img/happyfamily.png" alt="testimonial">
+                                    </div>
+                                    <div class="col-sm-6 d-flex">
+                                        <div class="media my-auto">
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                                                    <p class="overview"><b>Sorkpor Family</b>, Happy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img class="w-100 testmonial-img" src="img/family3.png" alt="testimonial">
+                                    </div>
+                                    <div class="col-sm-6 d-flex">
+                                        <div class="media my-auto">
+                                            <div class="media-body">
+                                                <div class="testimonial">
+                                                    <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra.</p>
+                                                    <p class="overview"><b>Sarfo Family</b>, Happy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="item carousel-item">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="media">
@@ -379,8 +398,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="item carousel-item">
+                            </div> -->
+                            <!-- <div class="item carousel-item">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="media">
@@ -413,7 +432,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -474,6 +493,9 @@
         $("#current_year").text((new Date).getFullYear());
 
         $(function() {
+
+            AOS.init();
+
             // smooth scroll effect
             $('a[href*="#sec2"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
                 // On-page links
