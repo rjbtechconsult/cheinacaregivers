@@ -94,7 +94,7 @@
                                         Find care home jobs the easy way
                                     </h1>
                                     <h5>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut, a ea at ex molestias tempore esse, provident possimus animi labore. Esse obcaecati porro saepe.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut.
                                     </h5>
                                     <a class="btn btn-primary btn-lg box-shadow-btn mt-3" href="#" data-aos="fade-up" data-aos-duration="1000">READ MORE</a>
                                 </div>
@@ -115,7 +115,7 @@
                             <div class="col-md-5 header-col d-flex">
                                 <div class="text-center text-md-left my-auto">
                                     <h1 class="font-bold">
-                                        Cheina Care Givers connects nurses and carers to care homes across Ghana
+                                        Cheina connects you to nurses.
                                     </h1>
                                     <h5>
                                         We’re simplifying booking temporary shifts, making it easier than ever to be an independent nurse or carer.
@@ -140,7 +140,7 @@
                                         Section Three Heading Text
                                     </h1>
                                     <h5>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut, a ea at ex molestias tempore esse, provident possimus animi labore. Esse obcaecati porro saepe.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab quaerat cum odio reprehenderit aut.
                                     </h5>
                                     <a class="btn btn-primary btn-lg box-shadow-btn mt-3" href="#">READ MORE</a>
                                 </div>
