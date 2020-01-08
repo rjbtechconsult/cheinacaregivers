@@ -172,7 +172,7 @@ section {
   font-family: 'Quicksand-Bold' !important;
 }
 
-input:focus {
+input:focus, select:focus, textarea:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border: #00d9a5 1px solid !important;
@@ -435,5 +435,37 @@ input:focus {
 
 .testimonial .testmonial-img {
   border-radius: 20px;
+}
+
+.col-sign-up {
+  min-height: 100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.col-sign-up:hover {
+  background-color: #dff9ff;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.row-sign-up {
+  min-height: calc(100vh - 77px);
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:active, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+  background: none !important;
+  border: 1px #ced4da solid !important;
+  border-radius: 3px !important;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
+  background: none !important;
+  border: 1px #ced4da solid !important;
+  border-radius: 3px !important;
+}
+
+.w-90 {
+  width: 90%;
 }
 /*# sourceMappingURL=main.css.map */
