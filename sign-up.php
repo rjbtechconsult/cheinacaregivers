@@ -119,10 +119,18 @@
                         </div>
 
                         <!-- Password -->
-                        <div class="form-group">
-                            <label for="password">Create a Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Eg. 1234@Password">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="ghana_post">Ghana Post Address?</label>
+                                <input type="text" class="form-control" id="ghana_post" placeholder="Eg. GHA-12345">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="password">Create a Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Eg. 1234@Password">
+                            </div>
                         </div>
+
 
                         <!-- Why are you looking for a new job? -->
                         <div class="form-group">
@@ -138,15 +146,15 @@
                         <!-- job process -->
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="job_process">Where are you in the job search process?</label>
-                                <select class="form-control" id="job_process">
+                                <label for="gps">Where are you in the job search process?</label>
+                                <select class="form-control" id="gps">
                                     <option value="" selected disabled>Select an option</option>
                                     <option value="Just starting">Just starting</option>
                                     <option value="Already interviewing">Already interviewing</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="available">Where are you in the job search process?</label>
+                                <label for="available">When are you available to start a new role?</label>
                                 <select class="form-control" id="available">
                                     <option value="" selected disabled>Select an option</option>
                                     <option value="Immediately">Immediately</option>
@@ -154,7 +162,110 @@
                                 </select>
                             </div>
                         </div>
-<!-- 
+
+                        <!-- do you drive -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="drive">Do you drive?</label>
+                                <select class="form-control" id="drive">
+                                    <option value="" selected disabled>Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="available">Do you have a car that you can use?</label>
+                                <select class="form-control" id="available">
+                                    <option value="" selected disabled>Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- NMC PIN -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nmc">Do you have an active NMC PIN?</label>
+                                <select class="form-control" id="nmc">
+                                    <option value="" selected disabled>Select an option</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="nmc_pin">What is your NMC PIN?</label>
+                                <input type="text" class="form-control" id="nmc_pin" placeholder="Enter your NMC PIN here">
+                            </div>
+                        </div>
+
+                        <!-- Registration type -->
+                        <div class="form-group">
+                            <label for="registration_type">What Registration type do you hold? <small>(Select all that apply).</small></label>
+                            <select multiple class="form-control selectpicker" id="registration_type">
+                                <option value="RN1: Adult nurse, level 1">RN1: Adult nurse, level 1</option>
+                                <option value="RNA: Adult nurse, level 1">RNA: Adult nurse, level 1</option>
+                                <option value="RN3: Mental health nurse, level 1">RN3: Mental health nurse, level 1</option>
+                                <option value="RNMH: Mental health nurse, level 1">RNMH: Mental health nurse, level 1</option>
+                                <option value="RN5: Learning disabilities nurse, level 1">RN5: Learning disabilities nurse, level 1</option>
+                                <option value="RNLD: Learning disabilities nurse, level 1">RNLD: Learning disabilities nurse, level 1</option>
+                                <option value="RN8: Children's nurse, level 1">RN8: Children's nurse, level 1</option>
+                                <option value="RNC: Children's nurse, level 1">RNC: Children's nurse, level 1</option>
+                                <option value="RN2: Adult nurse, level 2">RN2: Adult nurse, level 2</option>
+                                <option value="RN4: Mental health nurse, level 2">RN4: Mental health nurse, level 2</option>
+                                <option value="RN6: Learning disabilities nurse, level 2">RN6: Learning disabilities nurse, level 2</option>
+                                <option value="RN7: General nurse, level 2">RN7: General nurse, level 2</option>
+                                <option value="RN9: Fever nurse, level 2">RN9: Fever nurse, level 2</option>
+                                <option value="RM: Midwife">RM: Midwife</option>
+                            </select>
+                        </div>
+
+                        <!-- qualification -->
+                        <!-- do you drive -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="qualification">What is your qualification?</label>
+                                <select class="form-control" id="qualification">
+                                    <option value="" selected disabled>Select an option</option>
+                                    <option value="DipN">DipN</option>
+                                    <option value="BSC or BA ">BSC or BA </option>
+                                    <option value="MSC or MA">MSC or MA</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="additional_qualification">Any additional professional qualification</label>
+                                <select class="form-control" id="additional_qualification">
+                                    <option value="" selected disabled>Select an option</option>
+                                    <option value="RHV: Health visitor">RHV: Health visitor</option>
+                                    <option value="HV: Health visitor">HV: Health visitor</option>
+                                    <option value="RSN: School nurse">RSN: School nurse</option>
+                                    <option value="SN: School nurse">SN: School nurse</option>
+                                    <option value="ROH: Occupational health nurse">ROH: Occupational health nurse</option>
+                                    <option value="OH: Occupational health nurse">OH: Occupational health nurse</option>
+                                    <option value="RFHN: Family health nurse">RFHN: Family health nurse</option>
+                                    <option value="FHN: Family health nurse">FHN: Family health nurse</option>
+                                    <option value="RPHN: Specialist community public health nurse">RPHN: Specialist community public health nurse</option>
+                                    <option value="V100: Community practitioner nurse prescriber">V100: Community practitioner nurse prescriber</option>
+                                    <option value="V150: Community practitioner nurse prescriber (without SPQ or SCPHN)">V150: Community practitioner nurse prescriber (without SPQ or SCPHN)</option>
+                                    <option value="V200: Nurse independent prescriber (extended formulary)">V200: Nurse independent prescriber (extended formulary)</option>
+                                    <option value="V300: Nurse independent / supplementary prescriber">V300: Nurse independent / supplementary prescriber</option>
+                                    <option value="LPE: Lecturer / Practice Educator">LPE: Lecturer / Practice Educator</option>
+                                    <option value="TCH: Teacher">TCH: Teacher</option>
+                                    <option value="SPA: Specialist practitioner: Adult nursing">SPA: Specialist practitioner: Adult nursing</option>
+                                    <option value="SPMH: Specialist practitioner: Mental health">SPMH: Specialist practitioner: Mental health</option>
+                                    <option value="SPC: Specialist practitioner: Children's nursing">SPC: Specialist practitioner: Children's nursing</option>
+                                    <option value="SPLD: Specialist practitioner: Learning disability nurse">SPLD: Specialist practitioner: Learning disability nurse</option>
+                                    <option value="SPGP: Specialist practitioner: General practice nursing">SPGP: Specialist practitioner: General practice nursing</option>
+                                    <option value="SCMH: Specialist practitioner: Community mental health nursing">SCMH: Specialist practitioner: Community mental health nursing</option>
+                                    <option value="SCLD: Specialist practitioner: Community learning disabilities nursing">SCLD: Specialist practitioner: Community learning disabilities nursing</option>
+                                    <option value="SPCC: Specialist practitioner: Community children’s nursing">SPCC: Specialist practitioner: Community children’s nursing</option>
+                                    <option value="SPDN: Specialist practitioner: District nursing">SPDN: Specialist practitioner: District nursing</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <!-- 
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputCity">City</label>

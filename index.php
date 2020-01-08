@@ -62,7 +62,7 @@
                 </ul>
                 <ul class="navbar-nav my-2 my-lg-0 ml-auto">
                     <li class="nav-item nav-item-padding active text-center">
-                        <button class="btn btn-primary btn-lg box-shadow-btn" onclick="location.href = 'sign-up.php';">SIGN UP</button>
+                        <button class="btn btn-primary btn-lg box-shadow-btn" onclick="location.href = 'sign-up';">SIGN UP</button>
                     </li>
                 </ul>
             </div>
