@@ -59,6 +59,10 @@
   background-color: #F47503;
 }
 
+.green {
+  color: #00d9a5;
+}
+
 .bg-light-blue {
   background-color: #c1eefa;
 }
@@ -107,13 +111,13 @@
   background-color: #00d9a5;
 }
 
-.btn {
-  border-radius: 30px;
+.btn, .swal2-styled.swal2-confirm {
+  border-radius: 30px !important;
   color: #494949;
   border: none;
 }
 
-.btn:focus {
+.btn:focus, .swal2-styled.swal2-confirm:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border-color: none !important;
@@ -124,16 +128,16 @@
           box-shadow: 0px 0px 6px -2px black;
 }
 
-.btn-primary {
-  background: #ffd800;
+.btn-primary, .swal2-styled.swal2-confirm {
+  background: #ffd800 !important;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .swal2-styled.swal2-confirm:hover {
   color: white;
   background-color: #00d9a5;
 }
 
-.btn-primary:focus {
+.btn-primary:focus, .swal2-styled.swal2-confirm:focus {
   background-color: #ffd800 !important;
   color: #494949;
 }
@@ -467,5 +471,41 @@ input:focus, select:focus, textarea:focus {
 
 .w-90 {
   width: 90%;
+}
+
+@media (min-width: 992px) {
+  .scrollable-left {
+    position: absolute;
+    bottom: 0;
+    padding: 5% 5%;
+    margin: auto;
+    top: 0;
+    overflow-y: auto;
+  }
+  .scrollable-left::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollable-left::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .scrollable-left::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  .scrollable-left .fixed-right {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.input-group-append {
+  display: none;
+}
+
+input {
+  border-radius: 3px;
 }
 /*# sourceMappingURL=main.css.map */

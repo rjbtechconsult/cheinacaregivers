@@ -1,3 +1,7 @@
+<?
+// require 'classes/session.php';
+// $session = new Sesstion();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,15 +18,19 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/multi-step-form.css">
 
     <!-- Javascript dependencies -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script> -->
@@ -31,7 +39,7 @@
     <script src="fontawesome-free-5.11.2-web/js/all.js"></script>
 </head>
 
-<body style="padding-top: 77px;">
+<body style="padding-top: 77px; overflow-x:hidden; max-width: 100%;">
 
     <!--Navbar -->
     <nav class="navbar  navbar-expand-lg fixed-top transparent">
@@ -77,44 +85,46 @@
 
     <main>
         <div class="row row-sign-up">
+
+            <!-- Nurse sign up -->
             <div class="col-md-6 col-sign-up d-flex py-5">
                 <div class="m-auto text-center container w-90">
                     <h5 id="change-to-nurse" class="text-center mb-3" style="display: none;">I've changed my mind. I want to:</h5>
                     <button id="show-nurse-form" class="btn btn-primary btn-lg box-shadow-btn">REGISTER AS A NURSE</button>
 
-                    <form id="nurse-form" style="display: none;" class="text-left">
-                        <h4 class="mb-4">Register as a Nurse</h4>
-
+                    <form id="nurse-form" name="nurse-form" style="display: none;" class="text-left regForm">
+                        <h4 class="mb-4">Register as a Nurse:</h4>
+                        <input type="text" value="nurse" name="nurse" hidden>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="firstname">First Name</label>
-                                <input type="text" class="form-control" id="firstname" placeholder="Eg. Adjoa">
+                                <label for="first_name">First Name</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Eg. Maame" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="lastname">Last Name</label>
-                                <input type="text" class="form-control" id="lastname" placeholder="Eg. Mansah">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Eg. Ekuah" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Eg. adjoamansah@email.com">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Eg. adjoamansah@email.com" required>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" placeholder="Eg. 233241234567 ">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Eg. 233241234567" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="address_1">Address 1</label>
-                                <input type="text" class="form-control" id="address_1" placeholder="Eg. No.1 Street name, Accra">
+                                <input type="text" class="form-control" id="address_1" name="address_1" placeholder="Eg. No.1 Street name, Accra" required>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="address_2">Address 2</label>
-                                <input type="text" class="form-control" id="address_2" placeholder="Eg. No.2 Street name, Kumasi">
+                                <input type="text" class="form-control" id="address_2" name="address_2" placeholder="Eg. No.2 Street name, Kumasi">
                             </div>
                         </div>
 
@@ -122,198 +132,33 @@
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="ghana_post">Ghana Post Address?</label>
-                                <input type="text" class="form-control" id="ghana_post" placeholder="Eg. GHA-12345">
+                                <input type="text" class="form-control" id="ghana_post" name="ghana_post" placeholder="Eg. GHA-12345">
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="password">Create a Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Eg. 1234@Password">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Eg. 1234@Password" required>
                             </div>
                         </div>
-
-
-                        <!-- Why are you looking for a new job? -->
-                        <div class="form-group">
-                            <label for="why_job">Why do you want this job? <small>(Select all that apply).</small></label>
-                            <select multiple class="form-control selectpicker" id="why_job">
-                                <option value="Moving home">Moving home</option>
-                                <option value="Higher salary">Higher salary</option>
-                                <option value="Career progression">Career progression</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-
-                        <!-- job process -->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="gps">Where are you in the job search process?</label>
-                                <select class="form-control" id="gps">
-                                    <option value="" selected disabled>Select an option</option>
-                                    <option value="Just starting">Just starting</option>
-                                    <option value="Already interviewing">Already interviewing</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="available">When are you available to start a new role?</label>
-                                <select class="form-control" id="available">
-                                    <option value="" selected disabled>Select an option</option>
-                                    <option value="Immediately">Immediately</option>
-                                    <option value="">Select a date</option>
-                                </select>
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                                <button class="btn btn-primary" type="submit" name="submit-nurse" id="submit-nurse">Submit</button>
                             </div>
                         </div>
-
-                        <!-- do you drive -->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="drive">Do you drive?</label>
-                                <select class="form-control" id="drive">
-                                    <option value="" selected disabled>Select an option</option>
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="available">Do you have a car that you can use?</label>
-                                <select class="form-control" id="available">
-                                    <option value="" selected disabled>Select an option</option>
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- NMC PIN -->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="nmc">Do you have an active NMC PIN?</label>
-                                <select class="form-control" id="nmc">
-                                    <option value="" selected disabled>Select an option</option>
-                                    <option value="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="nmc_pin">What is your NMC PIN?</label>
-                                <input type="text" class="form-control" id="nmc_pin" placeholder="Enter your NMC PIN here">
-                            </div>
-                        </div>
-
-                        <!-- Registration type -->
-                        <div class="form-group">
-                            <label for="registration_type">What Registration type do you hold? <small>(Select all that apply).</small></label>
-                            <select multiple class="form-control selectpicker" id="registration_type">
-                                <option value="RN1: Adult nurse, level 1">RN1: Adult nurse, level 1</option>
-                                <option value="RNA: Adult nurse, level 1">RNA: Adult nurse, level 1</option>
-                                <option value="RN3: Mental health nurse, level 1">RN3: Mental health nurse, level 1</option>
-                                <option value="RNMH: Mental health nurse, level 1">RNMH: Mental health nurse, level 1</option>
-                                <option value="RN5: Learning disabilities nurse, level 1">RN5: Learning disabilities nurse, level 1</option>
-                                <option value="RNLD: Learning disabilities nurse, level 1">RNLD: Learning disabilities nurse, level 1</option>
-                                <option value="RN8: Children's nurse, level 1">RN8: Children's nurse, level 1</option>
-                                <option value="RNC: Children's nurse, level 1">RNC: Children's nurse, level 1</option>
-                                <option value="RN2: Adult nurse, level 2">RN2: Adult nurse, level 2</option>
-                                <option value="RN4: Mental health nurse, level 2">RN4: Mental health nurse, level 2</option>
-                                <option value="RN6: Learning disabilities nurse, level 2">RN6: Learning disabilities nurse, level 2</option>
-                                <option value="RN7: General nurse, level 2">RN7: General nurse, level 2</option>
-                                <option value="RN9: Fever nurse, level 2">RN9: Fever nurse, level 2</option>
-                                <option value="RM: Midwife">RM: Midwife</option>
-                            </select>
-                        </div>
-
-                        <!-- qualification -->
-                        <!-- do you drive -->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="qualification">What is your qualification?</label>
-                                <select class="form-control" id="qualification">
-                                    <option value="" selected disabled>Select an option</option>
-                                    <option value="DipN">DipN</option>
-                                    <option value="BSC or BA ">BSC or BA </option>
-                                    <option value="MSC or MA">MSC or MA</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="additional_qualification">Any additional professional qualification</label>
-                                <select class="form-control" id="additional_qualification">
-                                    <option value="" selected disabled>Select an option</option>
-                                    <option value="RHV: Health visitor">RHV: Health visitor</option>
-                                    <option value="HV: Health visitor">HV: Health visitor</option>
-                                    <option value="RSN: School nurse">RSN: School nurse</option>
-                                    <option value="SN: School nurse">SN: School nurse</option>
-                                    <option value="ROH: Occupational health nurse">ROH: Occupational health nurse</option>
-                                    <option value="OH: Occupational health nurse">OH: Occupational health nurse</option>
-                                    <option value="RFHN: Family health nurse">RFHN: Family health nurse</option>
-                                    <option value="FHN: Family health nurse">FHN: Family health nurse</option>
-                                    <option value="RPHN: Specialist community public health nurse">RPHN: Specialist community public health nurse</option>
-                                    <option value="V100: Community practitioner nurse prescriber">V100: Community practitioner nurse prescriber</option>
-                                    <option value="V150: Community practitioner nurse prescriber (without SPQ or SCPHN)">V150: Community practitioner nurse prescriber (without SPQ or SCPHN)</option>
-                                    <option value="V200: Nurse independent prescriber (extended formulary)">V200: Nurse independent prescriber (extended formulary)</option>
-                                    <option value="V300: Nurse independent / supplementary prescriber">V300: Nurse independent / supplementary prescriber</option>
-                                    <option value="LPE: Lecturer / Practice Educator">LPE: Lecturer / Practice Educator</option>
-                                    <option value="TCH: Teacher">TCH: Teacher</option>
-                                    <option value="SPA: Specialist practitioner: Adult nursing">SPA: Specialist practitioner: Adult nursing</option>
-                                    <option value="SPMH: Specialist practitioner: Mental health">SPMH: Specialist practitioner: Mental health</option>
-                                    <option value="SPC: Specialist practitioner: Children's nursing">SPC: Specialist practitioner: Children's nursing</option>
-                                    <option value="SPLD: Specialist practitioner: Learning disability nurse">SPLD: Specialist practitioner: Learning disability nurse</option>
-                                    <option value="SPGP: Specialist practitioner: General practice nursing">SPGP: Specialist practitioner: General practice nursing</option>
-                                    <option value="SCMH: Specialist practitioner: Community mental health nursing">SCMH: Specialist practitioner: Community mental health nursing</option>
-                                    <option value="SCLD: Specialist practitioner: Community learning disabilities nursing">SCLD: Specialist practitioner: Community learning disabilities nursing</option>
-                                    <option value="SPCC: Specialist practitioner: Community children’s nursing">SPCC: Specialist practitioner: Community children’s nursing</option>
-                                    <option value="SPDN: Specialist practitioner: District nursing">SPDN: Specialist practitioner: District nursing</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-                        <!-- 
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputState">State</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                            </div>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="address_2">Address 2</label>
-                            <input type="text" class="form-control" id="address_2" placeholder="Eg. No.2 Street name, Kumasi">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputAddress2">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Check me out
-                                </label>
-                            </div>
-                        </div> -->
-                        <button type="submit" class="btn btn-primary">Sign up</button>
                     </form>
+
                 </div>
 
             </div>
-            <div class="col-md-6 col-sign-up d-flex">
+            <!-- Nurse sign up end -->
+
+            <div id="col-employer" class="col-md-6 col-sign-up d-flex">
                 <div class="m-auto text-center">
                     <h5 id="change-to-employer" class="text-center mb-3" style="display: none;">I've changed my mind. I want to:</h5>
                     <button id="show-employer-form" class="btn btn-primary btn-lg box-shadow-btn">REGISTER AS AN EMPLOYER</button>
 
                     <form id="employer-form" style="display: none;">
                         <h4>Register as an Employer</h4>
-
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -331,61 +176,44 @@
                     </form>
                 </div>
             </div>
+
         </div>
     </main>
-    <!-- Footer -->
-    <footer class=" pt-5 pb-5 footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-xs-12 about-company links text-center text-md-left">
-                    <h2>CHIENA CARE GIVERS</h2>
-                    <ul class="m-0 p-0">
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Open Positions</a></li>
-                        <li><a href="#">Our Programmes</a></li>
-                        <li><a href="#">Empower Us</a></li>
-                        <li><a href="#">How Cheina Care Givers Works</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                    <!-- <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-                    <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p> -->
-                </div>
-                <div class="col-lg-3 col-xs-12 links text-center text-md-left">
-                    <h4 class="mt-lg-0 mt-sm-3">MORE</h4>
-                    <ul class="m-0 p-0">
-                        <li><a href="#">Published on</a></li>
-                        <li><a href="#">News & Press</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-xs-12 location links text-center text-md-left">
-                    <h4 class="mt-lg-0 mt-sm-4">CONNECT</h4>
-                    <ul class="m-0 p-0">
-                        <li><a href="#"><i class="fab fa-facebook text-white mr-2"></i>Facebook</a></li>
-                        <li><a href="#"><i class="fab fa-twitter text-white mr-2"></i>Twitter</a></li>
-                        <li><a href="#"><i class="fab fa-linkedin text-white mr-2"></i>LinkedIn</a></li>
-                        <li><a href="#"><i class="fab fa-instagram text-white mr-2"></i>Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col copyright text-center text-md-left">
-                    <p>
-                        <small class="text-white-50">© <span id="current_year"></span>. All Rights Reserved.</small>
-                        <small class="text-white-50">Powered by <a href="https://teamalfy.com" target="_blank">TeamAlfy</a> </small>
-                    </p>
 
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ./Footer -->
 
     <script>
         var currentYear = (new Date).getFullYear();
         $("#current_year").text((new Date).getFullYear());
 
-        $(function() {
+        jQuery(function($) {
+
+            $('#nurse-form').submit(function(e) {
+                e.preventDefault();
+                $('#submit-nurse').html('Submitting...');
+                var form = $(this).serialize();
+                console.log(form);
+                $.ajax({
+                    url: 'api/sign-up.php',
+                    method: 'post',
+                    data: form,
+                    success: function(data) {
+                        console.log(data);
+                        var res = JSON.parse(data);
+                        if (res.code == 300) {
+                            alert(res.message);
+                        }
+                        if (res.code == 200) {
+                            window.location.href = "register-as-a-nurse";
+                        }
+                    },
+                    error: function(error) {}
+                });
+            });
+
+            //datepicker
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4'
+            });
 
             //multi select
             $('.selectpicker').selectpicker();
@@ -395,6 +223,8 @@
                 $(this).hide();
                 $('#change-to-nurse').hide();
                 $('#nurse-form').show();
+                // $('#nurse-form').addClass('scrollable-left');
+                // $('#col-employer').addClass('fixed-right');
 
                 $('#employer-form').hide();
                 $('#change-to-employer').show();
@@ -413,8 +243,6 @@
 
             });
 
-            AOS.init();
-
             //box-shadow nav on scroll
             $(window).scroll(function() {
                 if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
@@ -428,8 +256,7 @@
                 }
             });
 
-
-        })
+        });
     </script>
 
 </body>

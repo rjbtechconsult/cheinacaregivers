@@ -72,6 +72,9 @@ $box-shadow-btn:  0px 0px 6px -2px rgba(0,0,0,1);
 .bg-orange{
     background-color: #F47503;
 }
+.green{
+    color: $green;
+}
 .bg-light-blue{
     background-color: $light-blue;
 }
@@ -110,8 +113,8 @@ $box-shadow-btn:  0px 0px 6px -2px rgba(0,0,0,1);
 .bg-green{
     background-color: $green;
 }
-.btn{
-    border-radius: 30px;
+.btn, .swal2-styled.swal2-confirm{
+    border-radius: 30px !important;
     color: $grey;
     border: none;
     &:focus{
@@ -122,8 +125,8 @@ $box-shadow-btn:  0px 0px 6px -2px rgba(0,0,0,1);
 .box-shadow-btn{
     box-shadow: $box-shadow-btn;
 }
-.btn-primary{
-    background: $yellow;
+.btn-primary, .swal2-styled.swal2-confirm{
+    background: $yellow !important;
     &:hover{
         color: white;
         background-color: $green;
@@ -439,4 +442,42 @@ input, select, textarea{
 }
 .w-90{
     width: 90%;
+}
+
+.scrollable-left{
+    @media(min-width: 992px){
+        position: absolute;
+        bottom: 0;
+        // left: 0;
+        padding:5% 5%;
+        margin: auto;
+        top: 0;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); 
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.3); 
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5); 
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.3); 
+        }
+
+        
+        .fixed-right{
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+.input-group-append{
+    display: none;
+}
+input{
+    border-radius: 3px;
 }
