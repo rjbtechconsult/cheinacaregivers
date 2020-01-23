@@ -217,7 +217,7 @@ $session_id = $session->get_session_id();
                             <div style="overflow:auto;">
                                 <div class="w-100">
                                     <p id="warning" class="text-danger float-left"></p>
-                                    <button id="btn-submit" class="btn btn-primary float-right" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                    <button class="btn btn-primary float-right" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
                                     <button class="btn btn-secondary text-white float-right mr-3" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
                                 </div>
                             </div>
@@ -256,7 +256,7 @@ $session_id = $session->get_session_id();
 
             $('#nurse-form').submit(function(e) {
                 e.preventDefault();
-                $('#btn-submit').html('Submitting...');
+                $('#nextBtn').html('Submitting...');
                 var form = $(this).serialize();
                 console.log(form);
 
@@ -266,7 +266,7 @@ $session_id = $session->get_session_id();
                     method: 'POST',
                     success: function(data) {
                         var res = JSON.parse(data);
-                        $('#btn-submit').html('Submit');
+                        $('#nextBtn').html('Submit');
 
                         if (res.code == 200) {
                             Swal.fire({
