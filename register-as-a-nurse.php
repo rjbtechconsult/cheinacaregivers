@@ -4,12 +4,12 @@ require 'classes/user.php';
 $session = new Session();
 $current_user = new Users();
 
-if (isset($_SESSION['continue']) && $_SESSION['continue']!=true) {
-   if (isset($_SESSION['session_id'])) {
-      header('location: nurse');
-   }else {
+if (isset($_SESSION['continue']) && $_SESSION['continue'] != true) {
+    if (isset($_SESSION['session_id'])) {
+        header('location: nurse');
+    } else {
         header('location: login');
-   }
+    }
 }
 
 $current_user_info = json_decode($current_user->get_current_user_info(), true);
@@ -217,7 +217,7 @@ $session_id = $session->get_session_id();
                             <div style="overflow:auto;">
                                 <div class="w-100">
                                     <p id="warning" class="text-danger float-left"></p>
-                                    <button class="btn btn-primary float-right" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                    <button id="btn-submit" class="btn btn-primary float-right" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
                                     <button class="btn btn-secondary text-white float-right mr-3" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
                                 </div>
                             </div>
@@ -256,6 +256,7 @@ $session_id = $session->get_session_id();
 
             $('#nurse-form').submit(function(e) {
                 e.preventDefault();
+                $('#btn-submit').html('Submitting...');
                 var form = $(this).serialize();
                 console.log(form);
 
@@ -265,6 +266,8 @@ $session_id = $session->get_session_id();
                     method: 'POST',
                     success: function(data) {
                         var res = JSON.parse(data);
+                        $('#btn-submit').html('Submit');
+
                         if (res.code == 200) {
                             Swal.fire({
                                 position: 'center',
