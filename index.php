@@ -478,7 +478,7 @@
                 <div class="col copyright text-center text-md-left">
                     <p>
                         <small class="text-white-50">© <span id="current_year"></span>. All Rights Reserved.</small>
-                        <small class="text-white-50">Powered by <a href="https://teamalfy.com" target="_blank">TeamAlfy</a> </small>
+                        <small class="text-white-50">Powered by <a href="#" target="_blank">JusticeMarkwei</a> </small>
                     </p>
 
                 </div>
